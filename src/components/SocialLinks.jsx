@@ -7,7 +7,7 @@ import { socialLinks } from "../portfolio";
 const SocialLinks = () => {
   return (
     <div className="btn-wrapper text-lg">
-      <Button
+      {/* <Button
         className="btn-icon-only rounded-circle"
         color="twitter"
         href={socialLinks.twitter}
@@ -16,7 +16,7 @@ const SocialLinks = () => {
         <span className="btn-inner--icon">
           <i className="fa fa-twitter" />
         </span>
-      </Button>
+      </Button> */}
       {/* <Button
         className="btn-icon-only rounded-circle ml-1"
         color="facebook"
@@ -27,7 +27,7 @@ const SocialLinks = () => {
           <i className="fa fa-facebook-square" />
         </span>
       </Button> */}
-      <Button
+      {/* <Button
         className="btn-icon-only rounded-circle ml-1"
         color="instagram"
         href={socialLinks.instagram}
@@ -36,7 +36,7 @@ const SocialLinks = () => {
         <span className="btn-inner--icon">
           <i className="fa fa-instagram" />
         </span>
-      </Button>
+      </Button> */}
       <Button
         className="btn-icon-only rounded-circle ml-1"
         color="github"

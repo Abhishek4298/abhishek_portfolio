@@ -1,6 +1,6 @@
 # Portfolio <a href="https://github.com/1hanzla100/developer-portfolio/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/1hanzla100/developer-portfolio"></a><a href="https://github.com/1hanzla100/developer-portfolio/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/1hanzla100/developer-portfolio"></a><a href="https://github.com/1hanzla100/developer-portfolio/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/1hanzla100/developer-portfolio"></a> <a href="https://github.com/1hanzla100/developer-portfolio/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/1hanzla100/developer-portfolio"></a>
 
-### To view a live example, **[click here](jasminshaikh.web.app/)**.
+### To view a live example, **[click here](abhibhavsar.web.app/)**.
 
 ## Table of Contents
 
@@ -39,7 +39,7 @@ From your command line, clone and run developerFolio:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/JasminShaikh/portfolio.git
+$ git clone https://github.com/Abhishek4298/portfolio.git
 
 # Go into the repository
 $ cd portfolio
@@ -55,7 +55,7 @@ $ npm start
 
 ```javascript
   // portfolio.js
-  githubUserName: 'YOUR GITHUB USERNAME HERE',
+  githubUserName: 'Abhishek4298',
 ```
 
 #### Using Emojis

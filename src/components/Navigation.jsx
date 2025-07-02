@@ -83,7 +83,7 @@ const Navigation = () => {
                       </span>
                     </NavLink>
                   </NavItem> */}
-                <NavItem>
+                {/* <NavItem>
                   <NavLink
                     className="nav-link-icon"
                     href={socialLinks.instagram}
@@ -106,7 +106,7 @@ const Navigation = () => {
                       Twitter
                     </span>
                   </NavLink>
-                </NavItem>
+                </NavItem> */}
                 <NavItem>
                   <NavLink
                     className="nav-link-icon"

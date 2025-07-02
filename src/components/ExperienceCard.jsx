@@ -47,7 +47,7 @@ const ExperienceCard = ({ data }) => {
               src={data.companylogo}
               style={{ width: "100px" }}
               onLoad={() => getColorArrays()}
-              alt=""
+              alt="Company Logo"
             />
             <CardTitle tag="h5">{data.role}</CardTitle>
             <CardSubtitle>{data.date}</CardSubtitle>
