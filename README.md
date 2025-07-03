@@ -25,17 +25,27 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
+### Prerequisites
+
+You'll need the following installed on your computer:
+
+- [Git](https://git-scm.com)
+- [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com))
+- [NVM](https://github.com/nvm-sh/nvm) (Node Version Manager) - Recommended for managing Node.js versions
+
+### Node.js Version Requirements
 
 ```
-node@v10.16.0 or higher
-npm@6.9.0 or higher
+node@v12.22.12 (Recommended and tested)
+npm@6.14.16 or compatible
 git@2.17.1 or higher
 ```
 
-## How To Use
+> **IMPORTANT**: This project uses `node-sass@4.13.1` which is not compatible with Node.js versions higher than v14. For best results, use Node.js v12.x.
 
-From your command line, clone and run developerFolio:
+## Installation Steps
+
+From your command line, follow these steps:
 
 ```bash
 # Clone this repository
@@ -44,11 +54,32 @@ $ git clone https://github.com/Abhishek4298/portfolio.git
 # Go into the repository
 $ cd portfolio
 
+# If using NVM, switch to the compatible Node.js version
+$ nvm install 12
+$ nvm use 12
+
 # Install dependencies
 $ npm install
 
-#Start's development server
+# Start the development server
 $ npm start
+```
+
+### Troubleshooting
+
+If you encounter errors related to `node-sass` during installation or startup:
+
+1. Make sure you're using Node.js v12.x: `node -v` should show v12.x.x
+2. If using a different Node.js version, switch to v12 using NVM: `nvm use 12`
+3. Clear npm cache if needed: `npm cache clean --force`
+4. Reinstall dependencies: `npm install`
+
+### Production Build
+
+To create an optimized production build:
+
+```bash
+$ npm run build
 ```
 
 ## Linking Portfolio to Github
