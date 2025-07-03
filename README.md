@@ -41,7 +41,7 @@ npm@6.14.16 or compatible
 git@2.17.1 or higher
 ```
 
-> **IMPORTANT**: This project uses `node-sass@4.13.1` which is not compatible with Node.js versions higher than v14. For best results, use Node.js v12.x.
+> **IMPORTANT**: This project originally used `node-sass@4.13.1` which has been replaced with the more compatible `sass` package. Node.js v12.x is still recommended for best compatibility with all dependencies.
 
 ## Installation Steps
 
@@ -67,12 +67,20 @@ $ npm start
 
 ### Troubleshooting
 
-If you encounter errors related to `node-sass` during installation or startup:
+If you encounter errors during installation or startup:
 
 1. Make sure you're using Node.js v12.x: `node -v` should show v12.x.x
 2. If using a different Node.js version, switch to v12 using NVM: `nvm use 12`
 3. Clear npm cache if needed: `npm cache clean --force`
 4. Reinstall dependencies: `npm install`
+
+#### SCSS/Sass Issues
+
+If you encounter SCSS compilation issues:
+
+1. The project now uses `sass` (dart-sass) instead of `node-sass` for better compatibility
+2. Custom webpack configuration is implemented using `react-app-rewired` and `customize-cra`
+3. If you still have issues, try removing `node_modules` and reinstalling: `rm -rf node_modules && npm install`
 
 ### Production Build
 
@@ -99,10 +107,13 @@ For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` functi
 - [axios](https://www.npmjs.com/package/axios)
 - [reactstrap](https://reactstrap.github.io/)
 - [react-reveal](https://www.react-reveal.com/)
-- [react-lottie](https://www.npmjs.com/package/react-lottie)
+- [@lottiefiles/react-lottie-player](https://www.npmjs.com/package/@lottiefiles/react-lottie-player)
 - [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)
 - [react-headroom](https://github.com/KyleAMathews/react-headroom)
 - [color-thief](https://github.com/lokesh/color-thief)
+- [sass](https://www.npmjs.com/package/sass) (dart-sass)
+- [react-app-rewired](https://www.npmjs.com/package/react-app-rewired)
+- [customize-cra](https://www.npmjs.com/package/customize-cra)
 
 ## Illustrations
 
