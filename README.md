@@ -112,41 +112,15 @@ This portfolio is configured to be deployed to Firebase Hosting. Follow these st
 1. **Switch to a compatible Node.js version** (Firebase CLI requires Node.js v14+):
 
 ```bash
-$ nvm use 16  # or any version >= 14
+nvm install 16.20.2
+nvm use 16.20.2
+npm install -g firebase-tools
+npm install
+npm run build
+npm run deploy
 ```
 
-2. **Install Firebase CLI globally**:
-
-```bash
-$ npm install -g firebase-tools
-```
-
-3. **Login to Firebase**:
-
-```bash
-$ firebase login
-```
-
-4. **Initialize Firebase in your project** (only needed for first-time setup):
-
-```bash
-$ firebase init
-```
-
-Select the following options during initialization:
-- Choose "Hosting" as the feature
-- Select your Firebase project or create a new one
-- Specify "build" as your public directory
-- Configure as a single-page app: Yes
-- Set up automatic builds and deploys with GitHub: No
-
-5. **Deploy to Firebase**:
-
-```bash
-$ firebase deploy
-```
-
-6. **After deployment, switch back to Node.js v12** for development:
+2. **After deployment, switch back to Node.js v12** for development:
 
 ```bash
 $ nvm use 12
