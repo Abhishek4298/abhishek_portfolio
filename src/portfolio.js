@@ -8,7 +8,7 @@ export const greetings = {
   name: "Abhishek Bhavsar",
   title: "Hi all, I'm Abhishek",
   description:
-    "Full Stack Developer with 5+ years of experience in building scalable web applications using React, Node.js, Python, and AWS. Experienced in designing and managing cloud infrastructure, and leading end-to-end development lifecycles. Passionate about clean code, DevOps practices, and delivering impact-driven solutions.",
+    "Full Stack Developer with 5+ years of experience in building scalable web applications using React, Node.js, Python, and AWS. Passionate about clean code, DevOps practices, and delivering impact-driven solutions.",
   resumeLink: resume,
 };
 
@@ -110,13 +110,13 @@ export const educationInfo = [
     desc: "GPA: 3.78/5",
     descBullets: [],
   },
-  {
-    schoolName: "KS School of Business Management, Gujarat University",
-    subHeader: "Bachelor of Science (Information Technology)",
-    duration: "2015 - 2018",
-    desc: "GPA: 3.54/5",
-    descBullets: [],
-  },
+  // {
+  //   schoolName: "KS School of Business Management, Gujarat University",
+  //   subHeader: "Bachelor of Science (Information Technology)",
+  //   duration: "2015 - 2018",
+  //   desc: "GPA: 3.54/5",
+  //   descBullets: [],
+  // },
 ];
 
 export const experience = [
