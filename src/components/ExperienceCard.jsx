@@ -5,7 +5,7 @@ import {
   CardBody,
   CardTitle,
   CardSubtitle,
-  //   CardText,
+  CardText,
   CardHeader,
   Col,
 } from "reactstrap";
@@ -51,7 +51,7 @@ const ExperienceCard = ({ data }) => {
             />
             <CardTitle tag="h5">{data.role}</CardTitle>
             <CardSubtitle>{data.date}</CardSubtitle>
-            {/* <CardText className="description my-3 text-left">
+            <CardText className="description my-3 text-left">
               {data.desc}
               <ul>
                 {data.descBullets
@@ -60,7 +60,7 @@ const ExperienceCard = ({ data }) => {
                     })
                   : null}
               </ul>
-            </CardText> */}
+            </CardText>
             <div></div>
           </CardBody>
         </Card>
