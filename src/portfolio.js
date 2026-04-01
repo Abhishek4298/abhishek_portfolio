@@ -69,7 +69,7 @@ export const skillsSection = {
       fontAwesomeClassname: "vscode-icons:file-type-mongo",
     },
     {
-      skillName:"PostgreSQL",
+      skillName: "PostgreSQL",
       fontAwesomeClassname: "logos:postgresql",
     },
     {
@@ -150,6 +150,12 @@ export const experience = [
 
 export const certifications = [
   {
+    name: "AWS Certified Developer - Associate",
+    body: "Amazon Web Services",
+    date: "2024",
+    desc: "Validated expertise in developing, deploying, and debugging cloud-based applications using AWS services and best practices"
+  },
+  {
     name: "AWS Cloud Practitioner",
     body: "Amazon Web Services",
     date: "2024",
@@ -158,6 +164,10 @@ export const certifications = [
 ];
 
 export const projects = [
+  {
+    name: "GoStar Platform",
+    desc: "Drug Discovery & Life Sciences"
+  },
   {
     name: "Cloud Solution Platform",
     desc: `Built cloud-based applications using Django and AWS (Lambda, S3, EC2), and developed responsive UIs with React and Tailwind CSS for a scalable product platform.`,
