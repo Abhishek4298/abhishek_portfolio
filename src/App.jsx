@@ -10,6 +10,7 @@ import Certifications from "./containers/Certifications";
 import Experience from "./containers/Experience";
 import Projects from "./containers/Projects";
 import GithubProfile from "./containers/GithubProfile";
+import Contact from "./containers/Contact";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
               <Certifications />
               <Experience />
               <Projects />
+              <Contact />
               <GithubProfile />
             </>
           )}

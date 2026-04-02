@@ -14,7 +14,13 @@ export const openSource = {
   githubUserName: "Abhishek4298",
 };
 
-export const contact = {};
+export const contact = {
+  title: "Get In Touch",
+  description: "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!",
+  email: "abhibhavsar1998@gmail.com",
+  phone: "+91 7227885771",
+  location: "Ahmedabad, Gujarat, India"
+};
 
 export const socialLinks = {
   // instagram: "https://www.instagram.com/i.am_abhii/",
