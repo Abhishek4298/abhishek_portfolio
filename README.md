@@ -113,12 +113,11 @@ This portfolio is configured to be deployed to Firebase Hosting. Follow these st
 1. **Switch to a compatible Node.js version** (Firebase CLI requires Node.js v14+):
 
 ```bash
-nvm install 16.20.2
-nvm use 16.20.2
+nvm install 20
+nvm use 20
 npm install -g firebase-tools
-npm install
-npm run build
-npm run deploy
+firebase login
+firebase deploy --only hosting
 ```
 
 2. **After deployment, switch back to Node.js v12** for development:
