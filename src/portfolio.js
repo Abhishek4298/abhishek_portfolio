@@ -8,7 +8,7 @@ export const greetings = {
   name: "Abhishek Bhavsar",
   title: "Hi all, I'm Abhishek",
   description:
-    "Full Stack Developer with 5+ years of experience in building scalable web applications using React, Node.js, Python, and AWS. Passionate about clean code, DevOps practices, and delivering impact-driven solutions.",
+    "A passionate Full Stack Web Developer having an experience of building Web applications.",
   resumeLink: resume,
 };
 
@@ -27,21 +27,21 @@ export const socialLinks = {
 
 export const skillsSection = {
   title: "What I do",
-  subTitle: "FULL STACK DEVELOPER WITH CLOUD EXPERTISE",
+  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Build scalable web applications with React, Node.js and Django"
+      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Design and manage cloud infrastructure"),
+    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Implement DevOps practices with AWS CLI, CI/CD, and Docker"
+      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
     ),
-    emoji("⚡ Develop responsive UIs with React, Redux, and Tailwind CSS"),
+    emoji("⚡ Cloud Development ( AWS )"),
   ],
 
   softwareSkills: [
     {
-      skillName: "ReactJs",
+      skillName: "reactjs",
       fontAwesomeClassname: "vscode-icons:file-type-reactjs",
     },
     {
@@ -57,15 +57,15 @@ export const skillsSection = {
       fontAwesomeClassname: "logos:aws",
     },
     {
-      skillName: "Docker",
+      skillName: "docker",
       fontAwesomeClassname: "logos:docker-icon",
     },
     {
-      skillName: "NodeJs",
+      skillName: "nodejs",
       fontAwesomeClassname: "logos:nodejs-icon",
     },
     {
-      skillName: "MongoDB",
+      skillName: "mongoDB",
       fontAwesomeClassname: "vscode-icons:file-type-mongo",
     },
     {
@@ -73,104 +73,70 @@ export const skillsSection = {
       fontAwesomeClassname: "logos:postgresql",
     },
     {
-      skillName: "Firebase",
+      skillName: "firebase",
       fontAwesomeClassname: "logos:firebase",
     },
     {
-      skillName: "Git",
+      skillName: "git",
       fontAwesomeClassname: "logos:git-icon",
     },
   ],
 };
 
+// based on my above skill set please fill up Skillbars
 export const SkillBars = [
   {
-    Stack: "Frontend (React, NextJS, Tailwind CSS)",
+    Stack: "Frontend Development", //Insert stack or technology you have experience in
     progressPercentage: "90",
   },
   {
-    Stack: "Backend (Node.js, Django, REST APIs)",
-    progressPercentage: "85",
+    Stack: "Backend Development", //Insert stack or technology you have experience in
+    progressPercentage: "80", //Insert relative proficiency in percentage
   },
   {
-    Stack: "Cloud & DevOps (AWS, Docker)",
-    progressPercentage: "80",
-  },
-  {
-    Stack: "Databases (MongoDB, PostgreSQL, DynamoDB)",
-    progressPercentage: "75",
+    Stack: "Cloud Development", //Insert stack or technology you have experience in
+    progressPercentage: "80", //Insert relative proficiency in percentage
   },
 ];
 
 export const educationInfo = [
   {
-    schoolName: "KS School of Business Management, Gujarat University",
+    schoolName: "K. S. School Of Business Management",
     subHeader: "Master of Science (Information Technology)",
-    duration: "2018 - 2020",
-    desc: "GPA: 3.78/5",
+    duration: "August 2015 - April 2020",
+    desc: "Participated in  and published 5 papers.",
     descBullets: [],
   },
-  // {
-  //   schoolName: "KS School of Business Management, Gujarat University",
-  //   subHeader: "Bachelor of Science (Information Technology)",
-  //   duration: "2015 - 2018",
-  //   desc: "GPA: 3.54/5",
-  //   descBullets: [],
-  // },
 ];
 
 export const experience = [
   {
-    role: "Software Specialist",
-    company: "Excelra",
+    role: "Senior Software Specialist",
+    company: "Excelra ",
     companylogo: excelra,
-    date: "Feb 2023 - Present",
-    desc: "Working as a Software Specialist with focus on cloud development and responsive UIs.",
+    // date: "since November 2020",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     descBullets: [
-      "Built cloud-based applications using Django and AWS (Lambda, S3, EC2), and developed responsive UIs with React and Tailwind CSS",
-      "Developed bioinformatics workflow UI using React and integrated Python-based backend services to handle terabytes of sequencing data",
-      "Built reusable frontend components in React and integrated user-specific API authentication",
-      "Designed and consumed REST APIs in Node.js for dynamic data flow and enhanced plan tracking features"
+      "Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     ],
   },
   {
     role: "Software Engineer",
     company: "Bacancy Technology",
     companylogo: bacancyTechnology,
-    date: "Jan 2020 - Feb 2023",
-    desc: "Worked as a Software Engineer developing full-stack applications with React, Node.js, and AWS.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     descBullets: [
-      "Developed modular frontend using React and Redux with secure user-level API authentication and reusable UI modules",
-      "Engineered backend using Node.js and managed AWS stack via SAM templates with enhanced monitoring via AWS CloudWatch",
-      "Created puppeteer scripts to scrape market data into MongoDB and implemented Passport.js authentication",
-      "Built image upload features with AWS S3 and developed RESTful APIs integrating third-party sports-engine API"
+      "Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     ],
-  }
-];
-
-export const certifications = [
-  {
-    name: "AWS Certified Developer - Associate",
-    body: "Amazon Web Services",
-    date: "2024",
-    desc: "Validated expertise in developing, deploying, and debugging cloud-based applications using AWS services and best practices"
-  },
-  {
-    name: "AWS Cloud Practitioner",
-    body: "Amazon Web Services",
-    date: "2024",
-    desc: "Validated knowledge of AWS Cloud concepts, services, security, architecture, pricing, and support"
   }
 ];
 
 export const projects = [
   {
-    name: "GoStar Platform",
-    desc: "Drug Discovery & Life Sciences"
-  },
-  {
     name: "Cloud Solution Platform",
-    desc: `Built cloud-based applications using Django and AWS (Lambda, S3, EC2), and developed responsive UIs with React and Tailwind CSS for a scalable product platform.`,
+    desc: `Built cloud-based microservices using Django and AWS (Lambda, S3, EC2), and developed responsive UIs with React and Tailwind CSS for a scalable product platform.`,
   },
   {
     name: "Op2 Platform",

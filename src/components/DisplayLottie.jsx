@@ -1,17 +1,19 @@
 import React, { Suspense } from "react";
-import { Player } from "@lottiefiles/react-lottie-player";
+import Lottie from "react-lottie";
 import Loading from "./Loading";
 
 const GreetingLottie = ({ animationData }) => {
+  const defaultOptions = {
+    // loop: true,
+    // autoplay: true,
+    animationData: animationData,
+  };
+
   return (
     <Suspense fallback={<Loading />}>
+      {/* To override default onClick pause by Lottie */}
       <div onClick={() => null}>
-        <Player
-          autoplay
-          loop
-          src={animationData}
-          style={{ height: '100%', width: '100%' }}
-        />
+        <Lottie options={defaultOptions} />
       </div>
     </Suspense>
   );
