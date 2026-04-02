@@ -14,6 +14,8 @@ yarn-error.log*
 .npm/
 yarn.lock
 
+firebase.json
+.firebaserc
 .firebase
 
 .eslintcache
