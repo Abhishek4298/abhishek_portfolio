@@ -106,37 +106,58 @@ $ npm run build
 
 ### Deployment
 
-#### Option 1: Deploy to Firebase (Recommended)
+#### Option 1: Automatic CI/CD Deployment (Recommended) 🚀
 
-This portfolio is configured to be deployed to Firebase Hosting. Follow these steps to deploy:
+This portfolio includes automatic deployment to Firebase Hosting via GitHub Actions. Every push to the `master` or `main` branch will automatically build and deploy your site!
 
-1. **Switch to a compatible Node.js version** (Firebase CLI requires Node.js v14+):
+**Setup Instructions:**
+
+1. **Create a Firebase Project**
+   - Go to [Firebase Console](https://console.firebase.google.com/)
+   - Create a new project or select an existing one
+   - Note your project ID
+
+2. **Update Firebase Configuration**
+   - Open `.firebaserc` and replace `"your-firebase-project-id"` with your actual project ID
+
+3. **Generate Firebase Service Account**
+   - In Firebase Console, go to Project Settings → Service Accounts
+   - Click "Generate new private key" and download the JSON file
+
+4. **Add GitHub Secrets**
+   - Go to your GitHub repository → Settings → Secrets and variables → Actions
+   - Add two secrets:
+     - `FIREBASE_SERVICE_ACCOUNT`: Paste the entire service account JSON content
+     - `FIREBASE_PROJECT_ID`: Your Firebase project ID
+
+5. **Push to Deploy**
+   ```bash
+   git add .
+   git commit -m "Deploy portfolio"
+   git push origin master
+   ```
+
+Your site will automatically deploy! Check the Actions tab in GitHub to monitor the deployment.
+
+📖 **Detailed Setup Guide:** See [DEPLOYMENT_SETUP.md](./DEPLOYMENT_SETUP.md) for complete instructions.
+
+#### Option 2: Manual Firebase Deployment
+
+If you prefer manual deployment:
 
 ```bash
-nvm install 16.20.2
-nvm use 16.20.2
+# Install Firebase CLI
 npm install -g firebase-tools
-npm install
+
+# Login to Firebase
+firebase login
+
+# Update .firebaserc with your project ID
+
+# Build and deploy
 npm run build
-npm run deploy
+firebase deploy --only hosting
 ```
-
-2. **After deployment, switch back to Node.js v12** for development:
-
-```bash
-$ nvm use 12
-```
-
-#### Option 2: Manual Deployment via Firebase Console
-
-If you're having issues with the Firebase CLI, you can deploy manually:
-
-1. Create a production build: `npm run build`
-2. Go to [Firebase Console](https://console.firebase.google.com/)
-3. Create a new project (if you don't have one already)
-4. Navigate to Hosting in the left sidebar and click "Get started"
-5. Follow the web UI instructions to deploy your site
-6. Upload the contents of your `build` folder when prompted
 
 #### Option 3: Serve Locally
 
