@@ -1,67 +1,53 @@
-import React, { useState, createRef } from "react";
+import React, { createRef } from "react";
 
-import {
-  Card,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  //   CardText,
-  CardHeader,
-  Col,
-} from "reactstrap";
-
-import ColorThief from "colorthief";
+import { Card, CardBody, CardTitle, CardSubtitle, Col } from "reactstrap";
 
 import { Fade } from "react-reveal";
 
 const ExperienceCard = ({ data }) => {
-  const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
-  function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
-  }
-
-  function rgb(values) {
-    return typeof values === "undefined"
-      ? null
-      : "rgb(" + values.join(", ") + ")";
-  }
-
   return (
-    <Col lg="4">
+    <Col lg="6">
       <Fade left duration={1000} distance="40px">
         <Card
-          style={{ flex: 1 }}
-          className="shadow-lg--hover shadow border-0 text-center rounded"
+          style={{ flex: 1, height: "100%" }}
+          className="shadow-lg--hover shadow border-0 rounded"
         >
-          <CardHeader style={{ background: rgb(colorArrays) }}>
-            <h5 className="text-white">{data.company}</h5>
-          </CardHeader>
-          <CardBody className="py-5">
-            <img
-              ref={imgRef}
-              className=" bg-white rounded-circle mb-3 img-center img-fluid shadow-lg "
-              top="true"
-              src={data.companylogo}
-              style={{ width: "100px" }}
-              onLoad={() => getColorArrays()}
-              alt="Company Logo"
-            />
-            <CardTitle tag="h5">{data.role}</CardTitle>
-            <CardSubtitle>{data.date}</CardSubtitle>
-            {/* <CardText className="description my-3 text-left">
-              {data.desc}
-              <ul>
+          <CardBody className="py-5 px-4">
+            <div className="text-center mb-4">
+              <img
+                ref={imgRef}
+                className="bg-white rounded-circle mb-3 img-center img-fluid shadow"
+                src={data.companylogo}
+                style={{
+                  width: "120px",
+                  height: "120px",
+                  objectFit: "contain",
+                }}
+                alt="Company Logo"
+              />
+              <CardTitle tag="h4" className="mb-2">
+                {data.role}
+              </CardTitle>
+              <CardSubtitle className="text-muted mb-3">
+                {data.date}
+              </CardSubtitle>
+            </div>
+            <div className="text-left" style={{ color: "#6c757d" }}>
+              <p>{data.desc}</p>
+              <ul style={{ paddingLeft: "20px" }}>
                 {data.descBullets
-                  ? data.descBullets.map((desc) => {
-                      return <li key={desc}>{desc}</li>;
+                  ? data.descBullets.map((desc, index) => {
+                      return (
+                        <li key={index} className="mb-2">
+                          {desc}
+                        </li>
+                      );
                     })
                   : null}
               </ul>
-            </CardText> */}
-            <div></div>
+            </div>
           </CardBody>
         </Card>
       </Fade>

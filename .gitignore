@@ -19,3 +19,4 @@ firebase.json
 .firebase
 
 .eslintcache
+.env
